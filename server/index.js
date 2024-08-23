@@ -28,7 +28,7 @@ app.use(cookieParser());
 app.use(
 	cors({
 		origin: "*",
-		credentials: true,
+		credentials: true,  // true bcuz - frontend needs to send or receive cookies (e.g., for sessions)
 	})
 );
 app.use(
